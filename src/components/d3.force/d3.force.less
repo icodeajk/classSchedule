@@ -1,0 +1,50 @@
+svg {
+  g.force {
+    font-size: 0.14rem;
+    .node {
+      cursor: pointer;
+      &[node-type='person'] .circle,
+      &[node-type='Person'] .circle {
+        fill: #fff;
+        stroke: #e3e3e3;
+      }
+      &[node-type='company'] .circle,
+      &[node-type='Company'] .circle {
+        fill: #fff;
+        stroke: #e3e3e3;
+      }
+    }
+    .node-name {
+      stroke: none;
+      fill: #333;
+    }
+    .link-name {
+      fill: #333;
+      text-anchor: middle;
+      font-size: 0.13rem;
+    }
+    .arrow-marker {
+      fill: #e3e3e3;
+    }
+    .links {
+      cursor: default;
+      .clickable-link:hover {
+        cursor: pointer;
+      }
+    }
+    .link {
+      stroke: #e3e3e3;
+      fill: none;
+      &[node-type='person'] .circle,
+      &[node-type='Person'] .circle {
+        fill: rgb(152, 203, 106);
+        stroke: rgb(152, 203, 106);
+      }
+      &[node-type='company'] .circle,
+      &[node-type='Company'] .circle {
+        fill: rgb(96, 161, 241);
+        stroke: rgb(96, 161, 241);
+      }
+    }
+  }
+}

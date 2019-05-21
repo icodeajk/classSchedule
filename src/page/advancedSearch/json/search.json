@@ -1,0 +1,134 @@
+{
+  "offset": 0,
+  "count": 10,
+  "shareholders_change": {
+      "from": 2,
+      "to": 2
+  },
+  "company_name_change": {
+      "from": 2,
+      "to": 2
+  },
+  "legal_man_change": {
+      "from": 2,
+      "to": 2
+  },
+  "address_change": {
+      "from": 2,
+      "to": 2
+  },
+  "member_change": {
+      "from": 2,
+      "to": 2
+  },
+  "rule_change": {
+      "from": 2,
+      "to": 2
+  },
+  "scope_change": {
+      "from": 2,
+      "to": 2
+  },
+  "pattern_num": {
+      "from": 6,
+      "to": 10
+  },
+  "win_bid_num": {
+      "from": 6,
+      "to": 10
+  },
+  "acting_bid_num": {
+      "from": 6,
+      "to": 10
+  },
+  "bid_num": {
+      "from": 6,
+      "to": 10
+  },
+  "tax_arrears_num": {
+      "from": 4,
+      "to": 10
+  },
+  "tax_arrears": {
+      "from": 100000,
+      "to": 500000
+  },
+  "a_tax_num": {
+      "from": 2
+  },
+  "is_listed": [
+      "非上市"
+  ],
+  "plaintiff_num": {
+      "from": 4,
+      "to": 10
+  },
+  "defendant_num": {
+      "from": 4,
+      "to": 10
+  },
+  "executed_count": {
+      "from": 4,
+      "to": 10
+  },
+  "executed_money": {
+      "from": 100000,
+      "to": 500000
+  },
+  "punish_num": {
+      "from": 4,
+      "to": 10
+  },
+  "market_coefficient": [
+      "差"
+  ],
+  "risk_coefficient": [
+      "低"
+  ],
+  "investment_num": {
+      "from": 6,
+      "to": 10
+  },
+  "shareholders_num": {
+      "from": 6,
+      "to": 10
+  },
+  "branch_num": {
+      "from": 6,
+      "to": 10
+  },
+  "shareholder_listed": [
+      "否"
+  ],
+  "registered_time": {
+      "from": 4,
+      "to": 10
+  },
+  "business_status": [
+      "注销"
+  ],
+  "industries": [
+      "畜牧业",
+      "渔业"
+  ],
+  "location_map": {
+      "山西": [],
+      "内蒙古": [{
+        "赤峰市": [
+        "阿鲁科尔沁旗",
+        "松山区",
+        "巴林左旗"]
+      },
+      {
+        "鄂尔多斯市": []
+      }
+      ],
+      "辽宁": []
+    },
+  "registered_capital": {
+      "from": 5000000,
+      "to": 10000000
+  },
+  "market_sort": 0,
+  "risk_sork": 0
+}

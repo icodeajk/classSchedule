@@ -1,0 +1,131 @@
+//定制化mint-ui css
+.mint-search{
+  height: auto;
+
+}
+.inner-search{
+  height:auto
+}
+.mint-searchbar{
+  background: #d24545;
+  .mint-searchbar-inner{
+    border-radius: 10px;
+    .mintui-search{
+      font-size: 16px;
+    }
+    .mint-searchbar-core{
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+  .mint-searchbar-cancel{
+    color: #fff;
+    font-size: 16px;
+  }
+}
+.title{
+  .bottom-search{
+    .mint-searchbar{
+      background: #eee;
+      .mint-searchbar-cancel{
+        color: #333;
+      }
+    }
+  }
+}
+.customer-cont{
+  .mint-searchbar {
+    background: transparent;
+    .mint-searchbar-cancel{
+      color: #333;
+    }
+  }
+}
+.customer-block {
+  .mint-search-list {
+    display: none;
+  }
+}
+.mint-cell{
+  box-sizing: border-box;
+  // height: 44px;
+  min-height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  border-bottom: 1px solid #e3e3e3;/*no*/
+  .mint-cell-text{
+    color: #333;
+    font-weight: bold;
+  }
+}
+
+//switch-btn
+.mint-switch-input:checked + .mint-switch-core{
+  border-color: #d24545;
+  background-color: #d24545;
+}
+.mint-switch-core{
+  width: 46px;
+  height: 28px;
+}
+.mint-switch-core::after{
+  width: 26px;
+  height: 26px;
+}
+.mint-switch-input:checked + .mint-switch-core::after{
+  transform: translateX(18px);
+}
+.mint-switch-core::before{
+  width: 44px;
+  height: 28px;
+}
+
+.mint-header-title{
+  font-size: 17px;
+}
+.mint-msgbox-confirm {
+  color: #D24545;
+  font-size: 0.4rem;
+}
+.msgBoxConfirmButton {
+  color: #D24545;
+  font-size: 0.4rem;
+}
+.mint-msgbox-confirm {
+  font-size: 0.4rem;
+}
+.cancelButton {
+  font-size: 0.4rem;
+}
+.mint-msgbox-input input {
+  font-size: 0.4rem;
+}
+.customer-cont .mint-cell-swipe-buttongroup .mint-cell-swipe-button {
+  line-height: 2.8rem;
+  width: 2rem;
+  text-align: center;
+}
+// .potential-block .mint-cell-swipe-buttongroup .mint-cell-swipe-button {
+//   line-height: 2rem;
+//   width: 1.75rem;
+// }
+
+.card-container .list-ul .list-li .mint-cell.mint-cell-swipe {
+  height: 100%;
+}
+.mint-cell.no-title-cell .mint-cell-wrapper {
+  height: 100%;
+  .mint-cell-value {
+    width: 100%;
+    a{
+      width: 100%;
+    }
+  }
+}
+
+// 隐藏结果列表 解决回退bug
+.mint-search-list {
+  display: none;
+}
