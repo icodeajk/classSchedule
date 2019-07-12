@@ -3,15 +3,6 @@
     <div class="main-page">
       <slot name="main"></slot>
     </div>
-    <!-- <div class="sub-page-list" :class="{'show': isShow,
-    'from-top': options.from === 'top' ? true : false,
-    'from-left': options.from === 'left' ? true : false,
-    'from-right': options.from === 'right' ? true : false,
-    'from-bottom': options.from === 'bottom' ? true : false}">
-      <div :class="{'sub-page': true, 'active': true}">
-        <slot name="sub"></slot>
-      </div>
-    </div> -->
     <div class="sub-page-list" :class="{'show': isShow}"  :style="styles">
       <div :class="{'sub-page': true, 'active': true}">
         <slot name="sub"></slot>
@@ -36,34 +27,59 @@ export default {
   data() {
     return {
       isShow: false,
-      styles: {
+      // styles: {
 
-      }
+      // },
     }
   },
   created() {
   },
   beforeMount() {
-    this.changeDirection()
+    // this.changeDirection()
   },
   mounted() {
   },
+  computed: {
+    styles() {
+      let direction = this.isShow ? 0 : '-100%'
+      let styles = {}
+      if (['top', 'right', 'left'].indexOf(this.options.from) > -1) {
+        styles[this.options.from] = direction
+      } else { // bottom
+        styles.top = this.isShow ? '0' : '100%'
+      }
+      return styles
+    }
+  },
+  // watch: {
+  //   options: {
+  //     handler: function() {
+  //       debugger
+  //       this.changeDirection()
+  //     },
+  //     deep: true
+  //   }
+  // },
   beforeUpdate() {
-    this.changeDirection()
+
   },
   methods: {
     show() {
       this.isShow = true
+    },
+    hide() {
+      this.isShow = false
     },
     toggle() {
       this.isShow = !this.isShow
     },
     changeDirection() {
       let direction = this.isShow ? 0 : '-100%'
+      this.styles = {}
       if (['top', 'right', 'left'].indexOf(this.options.from) > -1) {
         this.styles[this.options.from] = direction
       } else { // bottom
-        this.styles.top = direction
+        this.styles.top = this.isShow ? '0' : '100%'
       }
     }
   },

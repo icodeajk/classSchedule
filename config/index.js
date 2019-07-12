@@ -27,7 +27,7 @@ module.exports = {
     // Various Dev Server settings
     // 同时支持localhost和ip地址访问应用
     host: '0.0.0.0', // can be overwritten by process.env.HOST
-    port: 8086, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

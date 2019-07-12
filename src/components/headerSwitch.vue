@@ -47,7 +47,7 @@
     box-sizing: border-box;
     color: #fff;
     display: flex;
-    font-size: 14px;
+    font-size: 20px;
     height: 50px !important;
     line-height: 50px !important;
     padding: 0 10px;
@@ -55,6 +55,9 @@
     text-align: center;
     white-space: nowrap;
     z-index: 10;
+  }
+  .mint-header-title {
+    font-size: 20px;
   }
   /* @component-namespace mint {
     @component header {
