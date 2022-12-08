@@ -16,7 +16,7 @@
     "better-scroll": "^1.9.1",
     "d3": "^5.7.0",
     "element-ui": "^2.8.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "js-cookie": "^2.2.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
